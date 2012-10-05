@@ -14,6 +14,7 @@ SmallObject::~SmallObject()
 
 const QMetaObject *SmallObject::metaObject() const
 {
+    // This function will credate a dynamic metaobject and will return it with new properties
     qDebug() << "Metaobject called";
     return QObject::metaObject();
 };
